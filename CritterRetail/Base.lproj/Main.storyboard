@@ -275,7 +275,7 @@
                                     <constraint firstAttribute="width" constant="297" id="qJv-fv-QjW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Confirm Order">
+                                <state key="normal" title="Continue Order">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
