@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1623430D1BBD78BC00C5DBCD /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1623430C1BBD78BC00C5DBCD /* ShopViewController.m */; settings = {ASSET_TAGS = (); }; };
+		162343101BBD78CD00C5DBCD /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1623430F1BBD78CD00C5DBCD /* CartViewController.m */; settings = {ASSET_TAGS = (); }; };
+		162343131BBD79A100C5DBCD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 162343111BBD79A100C5DBCD /* Model.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		162343151BBD7E8500C5DBCD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162343141BBD7E8500C5DBCD /* CoreData.framework */; };
+		1623431A1BBD800300C5DBCD /* CartItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 162343171BBD800300C5DBCD /* CartItem+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		1623431B1BBD800300C5DBCD /* CartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 162343191BBD800300C5DBCD /* CartItem.m */; settings = {ASSET_TAGS = (); }; };
+		16498FC31BC32D3D00E0BF21 /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16498FC21BC32D3D00E0BF21 /* CheckoutViewController.m */; settings = {ASSET_TAGS = (); }; };
+		16498FC61BC32E7900E0BF21 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16498FC51BC32E7900E0BF21 /* PaymentViewController.m */; settings = {ASSET_TAGS = (); }; };
+		16498FC91BC351FB00E0BF21 /* CartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16498FC81BC351FB00E0BF21 /* CartCell.m */; settings = {ASSET_TAGS = (); }; };
+		169E75721BBCB98D00FBCF55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 169E75711BBCB98D00FBCF55 /* main.m */; };
+		169E75751BBCB98D00FBCF55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 169E75741BBCB98D00FBCF55 /* AppDelegate.m */; };
+		169E757E1BBCB98D00FBCF55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169E757C1BBCB98D00FBCF55 /* Main.storyboard */; };
+		169E75801BBCB98D00FBCF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169E757F1BBCB98D00FBCF55 /* Assets.xcassets */; };
+		169E75831BBCB98D00FBCF55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169E75811BBCB98D00FBCF55 /* LaunchScreen.storyboard */; };
+		73507C9C4F2CC6E464DFF3AD /* libPods-CritterRetail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC44C364D3EFC346A2CE6AF /* libPods-CritterRetail.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1623430B1BBD78BC00C5DBCD /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopViewController.h; sourceTree = "<group>"; };
+		1623430C1BBD78BC00C5DBCD /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewController.m; sourceTree = "<group>"; };
+		1623430E1BBD78CD00C5DBCD /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		1623430F1BBD78CD00C5DBCD /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
+		162343121BBD79A100C5DBCD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		162343141BBD7E8500C5DBCD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		162343161BBD800300C5DBCD /* CartItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CartItem+CoreDataProperties.h"; path = "../CoreData/CartItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		162343171BBD800300C5DBCD /* CartItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CartItem+CoreDataProperties.m"; path = "../CoreData/CartItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		162343181BBD800300C5DBCD /* CartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CartItem.h; path = ../CoreData/CartItem.h; sourceTree = "<group>"; };
+		162343191BBD800300C5DBCD /* CartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CartItem.m; path = ../CoreData/CartItem.m; sourceTree = "<group>"; };
+		16498FC11BC32D3D00E0BF21 /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
+		16498FC21BC32D3D00E0BF21 /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
+		16498FC41BC32E7900E0BF21 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		16498FC51BC32E7900E0BF21 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
+		16498FC71BC351FB00E0BF21 /* CartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartCell.h; sourceTree = "<group>"; };
+		16498FC81BC351FB00E0BF21 /* CartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartCell.m; sourceTree = "<group>"; };
+		169E756D1BBCB98D00FBCF55 /* CritterRetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CritterRetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		169E75711BBCB98D00FBCF55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		169E75731BBCB98D00FBCF55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		169E75741BBCB98D00FBCF55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		169E757D1BBCB98D00FBCF55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		169E757F1BBCB98D00FBCF55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		169E75821BBCB98D00FBCF55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		169E75841BBCB98D00FBCF55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BC44C364D3EFC346A2CE6AF /* libPods-CritterRetail.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CritterRetail.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D9BE5E8E65336D819E160A1 /* Pods-CritterRetail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CritterRetail.release.xcconfig"; path = "Pods/Target Support Files/Pods-CritterRetail/Pods-CritterRetail.release.xcconfig"; sourceTree = "<group>"; };
+		9EB3DA20691158F84C8EF10F /* Pods-CritterRetail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CritterRetail.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CritterRetail/Pods-CritterRetail.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		169E756A1BBCB98D00FBCF55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162343151BBD7E8500C5DBCD /* CoreData.framework in Frameworks */,
+				73507C9C4F2CC6E464DFF3AD /* libPods-CritterRetail.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1623431C1BBD800C00C5DBCD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				162343161BBD800300C5DBCD /* CartItem+CoreDataProperties.h */,
+				162343171BBD800300C5DBCD /* CartItem+CoreDataProperties.m */,
+				162343181BBD800300C5DBCD /* CartItem.h */,
+				162343191BBD800300C5DBCD /* CartItem.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		169E75641BBCB98D00FBCF55 = {
+			isa = PBXGroup;
+			children = (
+				162343141BBD7E8500C5DBCD /* CoreData.framework */,
+				169E756F1BBCB98D00FBCF55 /* CritterRetail */,
+				169E756E1BBCB98D00FBCF55 /* Products */,
+				6E8C814BEE7F33F7B4FB9283 /* Pods */,
+				C10F4F55E383B7A901B54AB6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		169E756E1BBCB98D00FBCF55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				169E756D1BBCB98D00FBCF55 /* CritterRetail.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		169E756F1BBCB98D00FBCF55 /* CritterRetail */ = {
+			isa = PBXGroup;
+			children = (
+				1623431C1BBD800C00C5DBCD /* CoreData */,
+				1623430B1BBD78BC00C5DBCD /* ShopViewController.h */,
+				1623430C1BBD78BC00C5DBCD /* ShopViewController.m */,
+				1623430E1BBD78CD00C5DBCD /* CartViewController.h */,
+				1623430F1BBD78CD00C5DBCD /* CartViewController.m */,
+				16498FC11BC32D3D00E0BF21 /* CheckoutViewController.h */,
+				16498FC21BC32D3D00E0BF21 /* CheckoutViewController.m */,
+				16498FC41BC32E7900E0BF21 /* PaymentViewController.h */,
+				16498FC51BC32E7900E0BF21 /* PaymentViewController.m */,
+				16498FC71BC351FB00E0BF21 /* CartCell.h */,
+				16498FC81BC351FB00E0BF21 /* CartCell.m */,
+				169E75731BBCB98D00FBCF55 /* AppDelegate.h */,
+				169E75741BBCB98D00FBCF55 /* AppDelegate.m */,
+				169E757C1BBCB98D00FBCF55 /* Main.storyboard */,
+				169E757F1BBCB98D00FBCF55 /* Assets.xcassets */,
+				169E75811BBCB98D00FBCF55 /* LaunchScreen.storyboard */,
+				169E75841BBCB98D00FBCF55 /* Info.plist */,
+				169E75701BBCB98D00FBCF55 /* Supporting Files */,
+				162343111BBD79A100C5DBCD /* Model.xcdatamodeld */,
+			);
+			path = CritterRetail;
+			sourceTree = "<group>";
+		};
+		169E75701BBCB98D00FBCF55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				169E75711BBCB98D00FBCF55 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E8C814BEE7F33F7B4FB9283 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EB3DA20691158F84C8EF10F /* Pods-CritterRetail.debug.xcconfig */,
+				8D9BE5E8E65336D819E160A1 /* Pods-CritterRetail.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C10F4F55E383B7A901B54AB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BC44C364D3EFC346A2CE6AF /* libPods-CritterRetail.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		169E756C1BBCB98D00FBCF55 /* CritterRetail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 169E75871BBCB98D00FBCF55 /* Build configuration list for PBXNativeTarget "CritterRetail" */;
+			buildPhases = (
+				05E113AABE12B54183831A38 /* Check Pods Manifest.lock */,
+				169E75691BBCB98D00FBCF55 /* Sources */,
+				169E756A1BBCB98D00FBCF55 /* Frameworks */,
+				169E756B1BBCB98D00FBCF55 /* Resources */,
+				5C7F685C7F8CD543277EDBCF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CritterRetail;
+			productName = CritterRetail;
+			productReference = 169E756D1BBCB98D00FBCF55 /* CritterRetail.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		169E75651BBCB98D00FBCF55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Crittercism;
+				TargetAttributes = {
+					169E756C1BBCB98D00FBCF55 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 169E75681BBCB98D00FBCF55 /* Build configuration list for PBXProject "CritterRetail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 169E75641BBCB98D00FBCF55;
+			productRefGroup = 169E756E1BBCB98D00FBCF55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				169E756C1BBCB98D00FBCF55 /* CritterRetail */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		169E756B1BBCB98D00FBCF55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169E75831BBCB98D00FBCF55 /* LaunchScreen.storyboard in Resources */,
+				169E75801BBCB98D00FBCF55 /* Assets.xcassets in Resources */,
+				169E757E1BBCB98D00FBCF55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05E113AABE12B54183831A38 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C7F685C7F8CD543277EDBCF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CritterRetail/Pods-CritterRetail-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		169E75691BBCB98D00FBCF55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16498FC61BC32E7900E0BF21 /* PaymentViewController.m in Sources */,
+				16498FC31BC32D3D00E0BF21 /* CheckoutViewController.m in Sources */,
+				1623431A1BBD800300C5DBCD /* CartItem+CoreDataProperties.m in Sources */,
+				162343101BBD78CD00C5DBCD /* CartViewController.m in Sources */,
+				169E75751BBCB98D00FBCF55 /* AppDelegate.m in Sources */,
+				162343131BBD79A100C5DBCD /* Model.xcdatamodeld in Sources */,
+				1623431B1BBD800300C5DBCD /* CartItem.m in Sources */,
+				16498FC91BC351FB00E0BF21 /* CartCell.m in Sources */,
+				1623430D1BBD78BC00C5DBCD /* ShopViewController.m in Sources */,
+				169E75721BBCB98D00FBCF55 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		169E757C1BBCB98D00FBCF55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				169E757D1BBCB98D00FBCF55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		169E75811BBCB98D00FBCF55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				169E75821BBCB98D00FBCF55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		169E75851BBCB98D00FBCF55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		169E75861BBCB98D00FBCF55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		169E75881BBCB98D00FBCF55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB3DA20691158F84C8EF10F /* Pods-CritterRetail.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CritterRetail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crittercism.CritterRetail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		169E75891BBCB98D00FBCF55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D9BE5E8E65336D819E160A1 /* Pods-CritterRetail.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CritterRetail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crittercism.CritterRetail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		169E75681BBCB98D00FBCF55 /* Build configuration list for PBXProject "CritterRetail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169E75851BBCB98D00FBCF55 /* Debug */,
+				169E75861BBCB98D00FBCF55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		169E75871BBCB98D00FBCF55 /* Build configuration list for PBXNativeTarget "CritterRetail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169E75881BBCB98D00FBCF55 /* Debug */,
+				169E75891BBCB98D00FBCF55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		162343111BBD79A100C5DBCD /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				162343121BBD79A100C5DBCD /* Model.xcdatamodel */,
+			);
+			currentVersion = 162343121BBD79A100C5DBCD /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 169E75651BBCB98D00FBCF55 /* Project object */;
+}
