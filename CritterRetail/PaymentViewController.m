@@ -9,6 +9,7 @@
 #import "PaymentViewController.h"
 
 #import "MBProgressHUD.h"
+#import "Crittercism.h"
 
 @interface PaymentViewController ()
 <UITextFieldDelegate>
@@ -29,7 +30,8 @@
 
 - (void) textFieldDidBeginEditing:(UITextField *)textField
 {
-    self.view.transform = CGAffineTransformMakeTranslation(0, textField.frame.origin.y-150);
+//    CGFloat newY = textField.frame.origin.y-150;
+//    self.view.transform = CGAffineTransformMakeTranslation(0, newY > 0 ? 0 : newY);
 }
 
 - (void) textFieldDidEndEditing:(UITextField *)textField
@@ -86,6 +88,7 @@
                                                                   delegate:nil
                                                          cancelButtonTitle:@"Ok"
                                                          otherButtonTitles:nil] show];
+                                       [Crittercism failTransaction:@"checkout"];
                                        [self.navigationController popViewControllerAnimated:TRUE];
                                    }
                                });

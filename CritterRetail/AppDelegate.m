@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Crittercism.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +28,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    CrittercismConfig *config = [CrittercismConfig defaultConfig];
+    config.monitorUIWebView = YES;
+    config.monitorWKWebView = YES;
+    
+    [Crittercism enableWithAppID:@"56142cb48d4d8c0a00d07c86"];
+
     return YES;
 }
 

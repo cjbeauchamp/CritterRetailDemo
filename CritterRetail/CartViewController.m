@@ -11,6 +11,8 @@
 #import "AppDelegate.h"
 #import "CartCell.h"
 
+#import "Crittercism.h"
+
 @interface CartViewController () <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
@@ -28,7 +30,11 @@
     }
     
     self.totalLabel.text = [NSString stringWithFormat:@"$%@", total.stringValue];
-    [[self navigationController] tabBarItem].badgeValue = [NSString stringWithFormat:@"%d", self.fetchedResultsController.fetchedObjects.count];
+    
+    NSUInteger ct = self.fetchedResultsController.fetchedObjects.count;
+    NSString *ctString = [NSString stringWithFormat:@"%ld", ct];
+    
+    [[self navigationController] tabBarItem].badgeValue = ct == 0 ? nil : ctString;
 }
 
 - (void)viewDidLoad {
@@ -184,6 +190,11 @@
                              cancelButtonTitle:@"Ok"
                               otherButtonTitles:nil] show];
             return FALSE;
+        } else {
+            
+            // start the crittercism transaction
+            [Crittercism beginTransaction:@"checkout"];
+            
         }
     }
     

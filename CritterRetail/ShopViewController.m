@@ -11,6 +11,8 @@
 #import "AppDelegate.h"
 #import "MBProgressHUD.h"
 
+#import "Crittercism.h"
+
 @interface ShopViewController ()
 
 @end
@@ -91,6 +93,9 @@
             [hud show:YES];
             
             [hud hide:YES afterDelay:3];
+            
+            NSString *msg = [NSString stringWithFormat:@"Product added to cart: %ld", ((NSNumber*)paramDict[@"productID"]).integerValue];
+            [Crittercism leaveBreadcrumb:msg];
             
         }
         
