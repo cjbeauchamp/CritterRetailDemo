@@ -21,6 +21,13 @@
 
 @implementation CartViewController
 
+- (void) viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [Crittercism leaveBreadcrumb:@"CartViewDisplayed"];
+}
+
 - (void) updateTotal
 {
     // update our total
@@ -195,6 +202,14 @@
             // start the crittercism transaction
             [Crittercism beginTransaction:@"checkout"];
             
+            // update our total
+            NSDecimalNumber *total = [NSDecimalNumber decimalNumberWithString:@"0.0"];
+            for(CartItem *item in self.fetchedResultsController.fetchedObjects) {
+                total = [total decimalNumberByAdding:item.productPrice];
+            }
+            
+            int totalInt = [total decimalNumberByMultiplyingBy:[NSDecimalNumber decimalNumberWithString:@"100"]].intValue;
+            [Crittercism setValue:totalInt forTransaction:@"checkout"];
         }
     }
     

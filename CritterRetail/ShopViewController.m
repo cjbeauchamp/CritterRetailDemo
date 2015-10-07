@@ -19,6 +19,13 @@
 
 @implementation ShopViewController
 
+- (void) viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [Crittercism leaveBreadcrumb:@"ShopViewDisplayed"];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -43,6 +50,12 @@
 {
     self.backButton.enabled = webView.canGoBack;
     self.forwardButton.enabled = webView.canGoForward;
+    [self.activityIndicator stopAnimating];
+}
+
+- (void) webViewDidStartLoad:(UIWebView *)webView
+{
+    [self.activityIndicator startAnimating];
 }
 
 -(BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType

@@ -17,6 +17,13 @@
 
 @implementation CheckoutViewController
 
+- (void) viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [Crittercism leaveBreadcrumb:@"CheckoutViewDisplayed"];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 

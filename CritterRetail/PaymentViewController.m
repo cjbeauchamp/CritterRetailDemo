@@ -18,25 +18,11 @@
 
 @implementation PaymentViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void) textFieldDidBeginEditing:(UITextField *)textField
+- (void) viewDidAppear:(BOOL)animated
 {
-//    CGFloat newY = textField.frame.origin.y-150;
-//    self.view.transform = CGAffineTransformMakeTranslation(0, newY > 0 ? 0 : newY);
-}
-
-- (void) textFieldDidEndEditing:(UITextField *)textField
-{
-    self.view.transform = CGAffineTransformIdentity;
+    [super viewDidAppear:animated];
+    
+    [Crittercism leaveBreadcrumb:@"PaymentViewDisplayed"];
 }
 
 - (IBAction)confirmOrder:(id)sender {
