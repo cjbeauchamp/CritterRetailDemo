@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PaymentViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *cardName;
 @property (weak, nonatomic) IBOutlet UITextField *cardNumber;
 - (IBAction)confirmOrder:(id)sender;
 

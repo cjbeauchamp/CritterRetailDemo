@@ -27,6 +27,8 @@
 
 - (IBAction)confirmOrder:(id)sender {
     
+    [Crittercism setValue:self.cardName.text forKey:@"PayerName"];
+    
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     // do some API request

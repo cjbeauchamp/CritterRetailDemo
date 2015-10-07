@@ -308,6 +308,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cardName" destination="yqv-pS-M9K" id="KZ2-6g-QFa"/>
                         <outlet property="cardNumber" destination="Kfj-HR-hHG" id="jk8-a7-K09"/>
                         <segue destination="EHC-Tn-Qh0" kind="show" identifier="confirm_order" id="5i1-SI-1gH"/>
                     </connections>

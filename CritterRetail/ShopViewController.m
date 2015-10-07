@@ -62,8 +62,6 @@
 {
     NSURL *url = [request URL];
     
-    NSLog(@"scheme: %@", url.scheme);
-
     if([url.scheme isEqualToString:@"iosrequest"]) {
 
         NSString *method = url.host;
