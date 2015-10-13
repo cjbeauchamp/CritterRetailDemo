@@ -13,6 +13,7 @@
 		162343151BBD7E8500C5DBCD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162343141BBD7E8500C5DBCD /* CoreData.framework */; };
 		1623431A1BBD800300C5DBCD /* CartItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 162343171BBD800300C5DBCD /* CartItem+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		1623431B1BBD800300C5DBCD /* CartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 162343191BBD800300C5DBCD /* CartItem.m */; settings = {ASSET_TAGS = (); }; };
+		16361F981BC5DD1A00A90A5B /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16361F971BC5DD1A00A90A5B /* ReviewViewController.m */; settings = {ASSET_TAGS = (); }; };
 		16498FC31BC32D3D00E0BF21 /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16498FC21BC32D3D00E0BF21 /* CheckoutViewController.m */; settings = {ASSET_TAGS = (); }; };
 		16498FC61BC32E7900E0BF21 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16498FC51BC32E7900E0BF21 /* PaymentViewController.m */; settings = {ASSET_TAGS = (); }; };
 		16498FC91BC351FB00E0BF21 /* CartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16498FC81BC351FB00E0BF21 /* CartCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -21,6 +22,8 @@
 		169E757E1BBCB98D00FBCF55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169E757C1BBCB98D00FBCF55 /* Main.storyboard */; };
 		169E75801BBCB98D00FBCF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169E757F1BBCB98D00FBCF55 /* Assets.xcassets */; };
 		169E75831BBCB98D00FBCF55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169E75811BBCB98D00FBCF55 /* LaunchScreen.storyboard */; };
+		16D5E95B1BC8418F00F5C660 /* RatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D5E95A1BC8418F00F5C660 /* RatingViewController.m */; settings = {ASSET_TAGS = (); }; };
+		16DFB8E31BCD9BD00082F14E /* Crittercism.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DFB8E21BCD9BD00082F14E /* Crittercism.framework */; settings = {ASSET_TAGS = (); }; };
 		73507C9C4F2CC6E464DFF3AD /* libPods-CritterRetail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC44C364D3EFC346A2CE6AF /* libPods-CritterRetail.a */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,8 @@
 		162343171BBD800300C5DBCD /* CartItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CartItem+CoreDataProperties.m"; path = "../CoreData/CartItem+CoreDataProperties.m"; sourceTree = "<group>"; };
 		162343181BBD800300C5DBCD /* CartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CartItem.h; path = ../CoreData/CartItem.h; sourceTree = "<group>"; };
 		162343191BBD800300C5DBCD /* CartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CartItem.m; path = ../CoreData/CartItem.m; sourceTree = "<group>"; };
+		16361F961BC5DD1A00A90A5B /* ReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewViewController.h; sourceTree = "<group>"; };
+		16361F971BC5DD1A00A90A5B /* ReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewViewController.m; sourceTree = "<group>"; };
 		16498FC11BC32D3D00E0BF21 /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
 		16498FC21BC32D3D00E0BF21 /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
 		16498FC41BC32E7900E0BF21 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		169E757F1BBCB98D00FBCF55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		169E75821BBCB98D00FBCF55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		169E75841BBCB98D00FBCF55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16D5E9591BC8418F00F5C660 /* RatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingViewController.h; sourceTree = "<group>"; };
+		16D5E95A1BC8418F00F5C660 /* RatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingViewController.m; sourceTree = "<group>"; };
+		16DFB8E21BCD9BD00082F14E /* Crittercism.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crittercism.framework; sourceTree = "<group>"; };
 		2BC44C364D3EFC346A2CE6AF /* libPods-CritterRetail.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CritterRetail.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9BE5E8E65336D819E160A1 /* Pods-CritterRetail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CritterRetail.release.xcconfig"; path = "Pods/Target Support Files/Pods-CritterRetail/Pods-CritterRetail.release.xcconfig"; sourceTree = "<group>"; };
 		9EB3DA20691158F84C8EF10F /* Pods-CritterRetail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CritterRetail.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CritterRetail/Pods-CritterRetail.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				162343151BBD7E8500C5DBCD /* CoreData.framework in Frameworks */,
+				16DFB8E31BCD9BD00082F14E /* Crittercism.framework in Frameworks */,
 				73507C9C4F2CC6E464DFF3AD /* libPods-CritterRetail.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +90,7 @@
 		169E75641BBCB98D00FBCF55 = {
 			isa = PBXGroup;
 			children = (
+				16DFB8E21BCD9BD00082F14E /* Crittercism.framework */,
 				162343141BBD7E8500C5DBCD /* CoreData.framework */,
 				169E756F1BBCB98D00FBCF55 /* CritterRetail */,
 				169E756E1BBCB98D00FBCF55 /* Products */,
@@ -103,12 +113,16 @@
 				1623431C1BBD800C00C5DBCD /* CoreData */,
 				1623430B1BBD78BC00C5DBCD /* ShopViewController.h */,
 				1623430C1BBD78BC00C5DBCD /* ShopViewController.m */,
+				16D5E9591BC8418F00F5C660 /* RatingViewController.h */,
+				16D5E95A1BC8418F00F5C660 /* RatingViewController.m */,
 				1623430E1BBD78CD00C5DBCD /* CartViewController.h */,
 				1623430F1BBD78CD00C5DBCD /* CartViewController.m */,
 				16498FC11BC32D3D00E0BF21 /* CheckoutViewController.h */,
 				16498FC21BC32D3D00E0BF21 /* CheckoutViewController.m */,
 				16498FC41BC32E7900E0BF21 /* PaymentViewController.h */,
 				16498FC51BC32E7900E0BF21 /* PaymentViewController.m */,
+				16361F961BC5DD1A00A90A5B /* ReviewViewController.h */,
+				16361F971BC5DD1A00A90A5B /* ReviewViewController.m */,
 				16498FC71BC351FB00E0BF21 /* CartCell.h */,
 				16498FC81BC351FB00E0BF21 /* CartCell.m */,
 				169E75731BBCB98D00FBCF55 /* AppDelegate.h */,
@@ -181,6 +195,7 @@
 				TargetAttributes = {
 					169E756C1BBCB98D00FBCF55 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = D3XDJB389J;
 					};
 				};
 			};
@@ -259,8 +274,10 @@
 				162343101BBD78CD00C5DBCD /* CartViewController.m in Sources */,
 				169E75751BBCB98D00FBCF55 /* AppDelegate.m in Sources */,
 				162343131BBD79A100C5DBCD /* Model.xcdatamodeld in Sources */,
+				16361F981BC5DD1A00A90A5B /* ReviewViewController.m in Sources */,
 				1623431B1BBD800300C5DBCD /* CartItem.m in Sources */,
 				16498FC91BC351FB00E0BF21 /* CartCell.m in Sources */,
+				16D5E95B1BC8418F00F5C660 /* RatingViewController.m in Sources */,
 				1623430D1BBD78BC00C5DBCD /* ShopViewController.m in Sources */,
 				169E75721BBCB98D00FBCF55 /* main.m in Sources */,
 			);
@@ -373,10 +390,17 @@
 			baseConfigurationReference = 9EB3DA20691158F84C8EF10F /* Pods-CritterRetail.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CritterRetail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crittercism.CritterRetail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -385,10 +409,17 @@
 			baseConfigurationReference = 8D9BE5E8E65336D819E160A1 /* Pods-CritterRetail.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CritterRetail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crittercism.CritterRetail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

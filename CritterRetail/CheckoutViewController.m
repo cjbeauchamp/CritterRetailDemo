@@ -9,7 +9,7 @@
 #import "CheckoutViewController.h"
 #import "MBProgressHUD.h"
 #import "AppDelegate.h"
-#import "Crittercism.h"
+#import <Crittercism/Crittercism.h>
 
 @interface CheckoutViewController ()
 
@@ -55,7 +55,7 @@
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
-    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1:8000/api/completePurchase"];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/api/completePurchase", BASE_URL]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[[NSOperationQueue alloc] init]

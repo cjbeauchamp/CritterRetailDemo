@@ -4,7 +4,6 @@
 target 'CritterRetail' do
 
 pod 'MBProgressHUD', '~> 0.9.1'
-pod 'CrittercismSDK'
 
 end
 

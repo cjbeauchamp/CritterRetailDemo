@@ -8,8 +8,9 @@
 
 #import "PaymentViewController.h"
 
+#import "AppDelegate.h"
 #import "MBProgressHUD.h"
-#import "Crittercism.h"
+#import <Crittercism/Crittercism.h>
 
 @interface PaymentViewController ()
 <UITextFieldDelegate>
@@ -32,9 +33,7 @@
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     // do some API request
-    NSString *urlString = [NSString stringWithFormat:@"http://127.0.0.1:8000/api/confirmPayment/%@", self.cardNumber.text];
-    
-    NSURL *url = [NSURL URLWithString:urlString];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/api/confirmPayment/%@", BASE_URL, self.cardNumber.text]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[[NSOperationQueue alloc] init]

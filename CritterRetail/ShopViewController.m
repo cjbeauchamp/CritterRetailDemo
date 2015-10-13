@@ -10,8 +10,10 @@
 
 #import "AppDelegate.h"
 #import "MBProgressHUD.h"
+#import "ReviewViewController.h"
 
-#import "Crittercism.h"
+#import <Crittercism/Crittercism.h>
+
 
 @interface ShopViewController ()
 
@@ -30,6 +32,8 @@
 {
     [super viewDidLoad];
     
+    [AppDelegate sharedDelegate].shopVC = self;
+    
     for(UIViewController *vc in self.tabBarController.viewControllers) {
         if([vc isKindOfClass:[UINavigationController class]]) {
             UINavigationController *nvc = (UINavigationController*)vc;
@@ -42,7 +46,7 @@
 
 - (IBAction)goBrowse:(id)sender
 {
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://127.0.0.1:8000"]];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:BASE_URL]];
     [self.webView loadRequest:request];
 }
 
@@ -62,6 +66,8 @@
 {
     NSURL *url = [request URL];
     
+    NSLog(@"URL: %@", url);
+    
     if([url.scheme isEqualToString:@"iosrequest"]) {
 
         NSString *method = url.host;
@@ -80,7 +86,12 @@
         if([method isEqualToString:@"review"]) {
             
             // show a dialog for a review to be written
+            [self performSegueWithIdentifier:@"review" sender:paramDict];
             
+        } else if([method isEqualToString:@"rating"]) {
+            
+            // show a dialog for a review to be written
+            [self performSegueWithIdentifier:@"rating" sender:paramDict];
             
         } else if([method isEqualToString:@"addtocart"]) {
             
@@ -114,6 +125,16 @@
     }
     
     return YES;
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"review"]) {
+        NSDictionary *params = (NSDictionary*)sender;
+        NSLog(@"Params: %@", params);
+        ReviewViewController *vc = (ReviewViewController*)segue.destinationViewController;
+        vc.productID = [(NSNumber*)params[@"productID"] integerValue];
+    }
 }
 
 @end

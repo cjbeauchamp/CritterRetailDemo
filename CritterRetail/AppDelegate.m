@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "Crittercism.h"
+#import <Crittercism/Crittercism.h>
+#import "ShopViewController.h"
 
 @interface AppDelegate ()
 
@@ -32,9 +33,11 @@
     config.monitorUIWebView = YES;
     config.monitorWKWebView = YES;
     
+    [Crittercism setLoggingLevel:CRLoggingLevelInfo];
+
     [Crittercism enableWithAppID:@"56142cb48d4d8c0a00d07c86"];
+
     [Crittercism setUsername:@"CritterUser414"];
-    
     [Crittercism setValue:[[NSLocale preferredLanguages] firstObject] forKey:@"UserLocale"];
 
     return YES;

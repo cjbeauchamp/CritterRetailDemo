@@ -10,8 +10,7 @@
 
 #import "AppDelegate.h"
 #import "CartCell.h"
-
-#import "Crittercism.h"
+#import <Crittercism/Crittercism.h>
 
 @interface CartViewController () <NSFetchedResultsControllerDelegate>
 
