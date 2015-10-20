@@ -51,7 +51,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)completePurchase:(id)sender {
+- (IBAction)completePurchase:(id)sender
+{
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
@@ -118,4 +119,11 @@
                                });
                            }];
 }
+
+- (IBAction)triggerCrash:(id)sender {
+    @throw [NSException exceptionWithName:@"UIException"
+                                   reason:@"The outlet was not properly connected to the button."
+                                 userInfo:nil];
+}
+
 @end

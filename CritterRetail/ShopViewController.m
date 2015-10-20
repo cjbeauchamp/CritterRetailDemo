@@ -76,12 +76,15 @@
         
         params = [params stringByReplacingOccurrencesOfString:@"&quot;" withString:@"\""];
         
+        NSLog(@"Params: %@", params);
+
         NSError *jsonError;
         NSData *objectData = [params dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *paramDict = [NSJSONSerialization JSONObjectWithData:objectData
                                                                   options:0
                                                                     error:&jsonError];
         
+        NSLog(@"paramDict: %@", paramDict);
         
         if([method isEqualToString:@"review"]) {
             

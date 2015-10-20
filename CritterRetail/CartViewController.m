@@ -209,6 +209,7 @@
             
             int totalInt = [total decimalNumberByMultiplyingBy:[NSDecimalNumber decimalNumberWithString:@"100"]].intValue;
             [Crittercism setValue:totalInt forTransaction:@"checkout"];
+            NSLog(@"At risk: %d", totalInt);
         }
     }
     

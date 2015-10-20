@@ -13,8 +13,8 @@
 
 #import "CartItem+CoreDataProperties.h"
 
-#define BASE_URL        @"https://aqueous-springs-2444.herokuapp.com"
-//#define BASE_URL        @"http://127.0.0.1:8000"
+//#define BASE_URL        @"https://aqueous-springs-2444.herokuapp.com"
+#define BASE_URL        @"http://127.0.0.1:8000"
 
 @class ShopViewController;
 

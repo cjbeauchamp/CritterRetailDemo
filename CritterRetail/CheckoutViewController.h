@@ -13,5 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *checkoutTotal;
 - (IBAction)completePurchase:(id)sender;
+- (IBAction)triggerCrash:(id)sender;
 
 @end

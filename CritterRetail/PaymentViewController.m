@@ -59,13 +59,21 @@
                                                                       delegate:nil
                                                              cancelButtonTitle:@"Ok"
                                                              otherButtonTitles:nil] show];
+                                           [Crittercism failTransaction:@"checkout"];
                                            [self.navigationController popViewControllerAnimated:TRUE];
+                                       } else if ([httpResponse statusCode] == 600) {
+                                           
+                                           @throw [NSException exceptionWithName:@"InvalidResponse"
+                                                                          reason:@"Unable to parse the server response"
+                                                                        userInfo:nil];
+
                                        } else {
                                            [[[UIAlertView alloc] initWithTitle:@"Error"
                                                                        message:@"Something *actually* unexpected happened. Uh oh!"
                                                                       delegate:nil
                                                              cancelButtonTitle:@"Ok"
                                                              otherButtonTitles:nil] show];
+                                           [Crittercism failTransaction:@"checkout"];
                                            [self.navigationController popViewControllerAnimated:TRUE];
                                        }
                                    } else {
