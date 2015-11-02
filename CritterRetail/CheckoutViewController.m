@@ -27,6 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.title = @"Confirmation";
+
     // clear our cart
     NSFetchRequest *itemRequest = [[NSFetchRequest alloc] init];
     [itemRequest setEntity:[NSEntityDescription entityForName:@"CartItem"
@@ -36,14 +38,22 @@
     NSArray *items = [[AppDelegate sharedDelegate].managedObjectContext
                       executeFetchRequest:itemRequest error:&error];
     
-    NSDecimalNumber *total = [NSDecimalNumber decimalNumberWithString:@"0"];
+    NSDecimalNumber *cartValue = [NSDecimalNumber decimalNumberWithString:@"0"];
     
     //error handling goes here
     for (CartItem *item in items) {
-        total = [total decimalNumberByAdding:item.productPrice];
+        cartValue = [cartValue decimalNumberByAdding:item.productPrice];
     }
     
-    self.checkoutTotal.text = [NSString stringWithFormat:@"$%@", total.stringValue];
+    NSDecimalNumber *tax = [NSDecimalNumber decimalNumberWithString:[NSString stringWithFormat:@"%lf", cartValue.doubleValue*0.075]];
+    NSDecimalNumber *shipping = [NSDecimalNumber decimalNumberWithString:@"7.99"];
+    NSDecimalNumber *totalValue = [cartValue decimalNumberByAdding:tax];
+    totalValue = [totalValue decimalNumberByAdding:shipping];
+    
+    self.taxTotal.text = [NSString stringWithFormat:@"$%.2lf", tax.doubleValue];
+    self.shippingTotal.text = [NSString stringWithFormat:@"$%.2lf", shipping.doubleValue];
+    self.cartTotal.text = [NSString stringWithFormat:@"$%.2lf", cartValue.doubleValue];
+    self.checkoutTotal.text = [NSString stringWithFormat:@"$%.2lf", totalValue.doubleValue];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,8 +62,9 @@
 }
 
 - (IBAction)completePurchase:(id)sender
-{
-    
+{    
+    [Crittercism setValue:self.cardName.text forKey:@"PayerName"];
+
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/api/completePurchase", BASE_URL]];
@@ -97,6 +108,12 @@
                                            
                                            
                                            [self.navigationController popToRootViewControllerAnimated:TRUE];
+                                       } else if([httpResponse statusCode] == 300) {
+                                           // trigger a crash
+                                           @throw [NSException exceptionWithName:@"NSJSONException"
+                                                                          reason:@"Uncaught exception - unable to parse JSON."
+                                                                        userInfo:nil];
+
                                        } else {
                                            [[[UIAlertView alloc] initWithTitle:@"Transaction Failed"
                                                                        message:@"A bad thing happened on the server! Oh no!"
@@ -118,12 +135,6 @@
                                    }
                                });
                            }];
-}
-
-- (IBAction)triggerCrash:(id)sender {
-    @throw [NSException exceptionWithName:@"UIException"
-                                   reason:@"The outlet was not properly connected to the button."
-                                 userInfo:nil];
 }
 
 @end

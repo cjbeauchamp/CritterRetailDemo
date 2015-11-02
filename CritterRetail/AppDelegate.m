@@ -35,7 +35,7 @@
     
     [Crittercism setLoggingLevel:CRLoggingLevelInfo];
 
-    [Crittercism enableWithAppID:@"56142cb48d4d8c0a00d07c86"];
+    [Crittercism enableWithAppID:@"56142cb48d4d8c0a00d07c86" andConfig:config];
 
     [Crittercism setUsername:@"CritterUser414"];
     [Crittercism setValue:[[NSLocale preferredLanguages] firstObject] forKey:@"UserLocale"];

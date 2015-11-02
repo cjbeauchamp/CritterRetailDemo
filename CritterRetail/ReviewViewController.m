@@ -20,6 +20,12 @@
 
 @implementation ReviewViewController
 
+
+- (void) viewDidLoad
+{
+    [super viewDidLoad];
+    }
+
 - (IBAction)cancel:(id)sender
 {
     [self dismissViewControllerAnimated:TRUE completion:nil];

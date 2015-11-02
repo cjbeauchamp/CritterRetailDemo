@@ -1,44 +1,49 @@
 //
-//  PaymentViewController.m
+//  ShippingViewController.m
 //  CritterRetail
 //
 //  Created by Chris Beauchamp on 10/5/15.
 //  Copyright © 2015 Crittercism. All rights reserved.
 //
 
-#import "PaymentViewController.h"
+#import "ShippingViewController.h"
 
 #import "AppDelegate.h"
 #import "MBProgressHUD.h"
 #import <Crittercism/Crittercism.h>
 
-@interface PaymentViewController ()
+@interface ShippingViewController ()
 <UITextFieldDelegate>
 
 @end
 
-@implementation PaymentViewController
+@implementation ShippingViewController
+
+- (void) viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.title = @"Shipping & Payment";
+}
 
 - (void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
-    [Crittercism leaveBreadcrumb:@"PaymentViewDisplayed"];
+    [Crittercism leaveBreadcrumb:@"ShippingViewDisplayed"];
 }
 
-- (IBAction)confirmOrder:(id)sender {
-    
-    [Crittercism setValue:self.cardName.text forKey:@"PayerName"];
+- (IBAction)confirmShipping:(id)sender {
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     // do some API request
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/api/confirmPayment/%@", BASE_URL, self.cardNumber.text]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/api/confirmPayment/%@", BASE_URL, self.zipCode.text]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[[NSOperationQueue alloc] init]
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *error){
-
+                               
                                dispatch_async(dispatch_get_main_queue(), ^{
                                    
                                    [MBProgressHUD hideHUDForView:self.view animated:YES];
@@ -66,7 +71,7 @@
                                            @throw [NSException exceptionWithName:@"InvalidResponse"
                                                                           reason:@"Unable to parse the server response"
                                                                         userInfo:nil];
-
+                                           
                                        } else {
                                            [[[UIAlertView alloc] initWithTitle:@"Error"
                                                                        message:@"Something *actually* unexpected happened. Uh oh!"
@@ -91,4 +96,5 @@
     
     
 }
+
 @end
